@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Datos Guardados</title>
+</head>
+<body>
+    <h1>Datos Guardados</h1>
+    <ul>
+        {% for dato in datos %}
+            <li>{{ dato['nombre'] }} - {{ dato['email'] }}</li>
+        {% endfor %}
+    </ul>
+    <a href="/">Volver</a>
+</body>
+</html>
